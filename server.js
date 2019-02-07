@@ -37,7 +37,7 @@ app.listen(port, () => {
     console.log(`[${new Date}] App listening on port ${port}`);
 });
 
-const job = new Cron('0 */5 * * * *', async () => {
+const job = new Cron('0 */60 * * * *', async () => {
     let result;
     let status = 'Tweeted from Express.js using Twit library https://www.npmjs.com/package/twit';
 
